@@ -2,6 +2,12 @@
 
 # Evolutionary model of Variant Effects (EVE)
 ## 这个研究也很重要
+[Nature｜精准医疗的基础：准确预测致病突变的深度生成模型](https://baijiahao.baidu.com/s?id=1716285836559645249&wfr=spider&for=pc)  
+
+[Nature | 可准确预测基因变异致病性的深度生成模型——EVE，性能优于已有算法](https://mp.weixin.qq.com/s?__biz=MzA5NTYzMzAyNQ==&mid=2650232505&idx=1&sn=6215e36376662db48722c111094991cf&chksm=88bf9d57bfc814414766bb3fd876689e0b04f7200d626ae4c51ce76690d4c620ed0385a3c176&scene=27)  
+
+[自然》：哈佛/牛津科学家联手开发人工智能，准确预测致病基因突变](https://new.qq.com/rain/a/20211028A00N3700)  
+
 
 This is the official code repository for the paper "Disease variant prediction with deep generative models of evolutionary data" (https://www.nature.com/articles/s41586-021-04043-8). This project is a joint collaboration between the Marks lab (https://www.deboramarkslab.com/) and the OATML group (https://oatml.cs.ox.ac.uk/).
 
