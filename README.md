@@ -16,10 +16,10 @@ EVE is a set of protein-specific models providing for any single amino acid muta
 
 ## Usage
 The end to end process to compute EVE scores consists of three consecutive steps:
-1. Train the Bayesian VAE on a re-weighted multiple sequence alignment (MSA) for the protein of interest => train_VAE.py
-2. Compute the evolutionary indices for all single amino acid mutations => compute_evol_indices.py
+1. Train the Bayesian VAE on a re-weighted multiple sequence alignment (MSA) for the protein of interest => [train_VAE.py](https://github.com/pengsihua2023/EVE/blob/master/examples/Step1_train_VAE.sh)  
+2. Compute the evolutionary indices for all single amino acid mutations => [compute_evol_indices.py](https://github.com/pengsihua2023/EVE/blob/master/examples/Step2_compute_evol_indices_all_singles.sh)  
 3. Train a GMM to cluster variants on the basis of the evol indices then output scores and uncertainties on the class assignments => train_GMM_and_compute_EVE_scores.py
-We also provide all EVE scores for all single amino acid mutations for thousands of proteins at the following address: http://evemodel.org/.
+We also provide all EVE scores for all single amino acid mutations for thousands of proteins at the following address: [http://evemodel.org/.](https://github.com/pengsihua2023/EVE/blob/master/examples/Step3_train_GMM_and_compute_EVE_scores_all_singles.sh)  
 
 ## Example scripts
 The "examples" folder contains sample bash scripts to obtain EVE scores for a protein of interest (using PTEN as an example).
