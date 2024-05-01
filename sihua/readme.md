@@ -60,17 +60,17 @@ python compute_evol_indices.py ^
 第三步：
 ```
 export input_evol_indices_location=C:\Users\sp96859\test\EVE\results\evol_indices
-export input_evol_indices_filename_suffix='_20000_samples'
+export input_evol_indices_filename_suffix=_20000_samples
 export protein_list=C:\Users\sp96859\test\EVE\data\mappings\example_mapping.csv
-export output_eve_scores_location='./results/EVE_scores'
-export output_eve_scores_filename_suffix='Jan1_PTEN_example'
+export output_eve_scores_location=C:\Users\sp96859\test\EVE\results\EVE_scores
+export output_eve_scores_filename_suffix=Jan1_PTEN_example
 
 export GMM_parameter_location=C:\Users\sp96859\test\EVE\results\GMM_parameters\Default_GMM_parameters
-export GMM_parameter_filename_suffix='default'
+export GMM_parameter_filename_suffix=default
 export protein_GMM_weight=0.3
-export plot_location='./results'
-export labels_file_location='C:\Users\sp96859\test\EVE\data\labels\PTEN_ClinVar_labels.csv
-export default_uncertainty_threshold_file_location='./utils/default_uncertainty_threshold.json'
+export plot_location=C:\Users\sp96859\test\EVE\results
+export labels_file_location=C:\Users\sp96859\test\EVE\data\labels\PTEN_ClinVar_labels.csv
+export default_uncertainty_threshold_file_location=C:\Users\sp96859\test\EVE\utils/default_uncertainty_threshold.json'
 
 python train_GMM_and_compute_EVE_scores.py ^
 --input_evol_indices_location "%input_evol_indices_location%" ^
