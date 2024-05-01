@@ -1,5 +1,6 @@
 # 我的修改
 ## 在windows下运行代码
+把下列代码保存为bat文件：step1.bat直接在conda环境下运行step1.bat
 ```
 @echo off
 set MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA
