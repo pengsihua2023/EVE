@@ -27,16 +27,16 @@ python train_VAE.py ^
 
 ```
 @echo off
-set MSA_data_folder='./data/MSA'
-set MSA_list='./data/mappings/example_mapping.csv'
-set MSA_weights_location='./data/weights'
-set VAE_checkpoint_location='./results/VAE_parameters'
-set model_name_suffix='Jan1_PTEN_example'
-set model_parameters_location='./EVE/default_model_params.json'
-set training_logs_location='./logs/'
+set MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA
+set MSA_list=C:\Users\sp96859\test\EVE\data\mappings\example_mapping.csv
+set MSA_weights_location=C:\Users\sp96859\test\EVE\data\weights
+set VAE_checkpoint_location=C:\Users\sp96859\test\EVE\results\VAE_parameters
+set model_name_suffix=Jan1_PTEN_example
+set model_parameters_location=C:\Users\sp96859\test\EVE\EVE\default_model_params.json
+set training_logs_location=C:\Users\sp96859\test\EVE\logs
 set protein_index=0
 
-set computation_mode='all_singles'
+set computation_mode=all_singles
 set all_singles_mutations_folder='./data/mutations'
 set output_evol_indices_location='./results/evol_indices'
 set num_samples_compute_evol_indices=20000
