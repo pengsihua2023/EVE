@@ -1,6 +1,6 @@
 # 我的修改
 ## 在windows下运行代码
-把下列代码保存为bat文件：step1.bat直接在conda环境下运行step1.bat
+第一步：把下列代码保存为bat文件：step1.bat直接在conda环境下运行step1.bat
 ```
 @echo off
 set MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA
@@ -22,4 +22,37 @@ python train_VAE.py ^
   --model_parameters_location "%model_parameters_location%" ^
   --training_logs_location "%training_logs_location%"
 
+```
+第二步：
+
+```
+@echo off
+set MSA_data_folder='./data/MSA'
+set MSA_list='./data/mappings/example_mapping.csv'
+set MSA_weights_location='./data/weights'
+set VAE_checkpoint_location='./results/VAE_parameters'
+set model_name_suffix='Jan1_PTEN_example'
+set model_parameters_location='./EVE/default_model_params.json'
+set training_logs_location='./logs/'
+set protein_index=0
+
+set computation_mode='all_singles'
+set all_singles_mutations_folder='./data/mutations'
+set output_evol_indices_location='./results/evol_indices'
+set num_samples_compute_evol_indices=20000
+set batch_size=2048
+
+python compute_evol_indices.py ^
+    --MSA_data_folder "%MSA_data_folder%" ^
+    --MSA_list "%MSA_list%" ^
+    --protein_index "%protein_index%" ^
+    --MSA_weights_location "%MSA_weights_location%" ^
+    --VAE_checkpoint_location "%VAE_checkpoint_location%" ^
+    --model_name_suffix "%model_name_suffix%" ^
+    --model_parameters_location "%model_parameters_location%" ^
+    --computation_mode "%computation_mode} ^
+    --all_singles_mutations_folder "%all_singles_mutations_folder%" ^
+    --output_evol_indices_location "%output_evol_indices_location%" ^
+    --num_samples_compute_evol_indices "%num_samples_compute_evol_indices%" ^
+    --batch_size "%batch_size%"
 ```
