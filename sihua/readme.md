@@ -56,3 +56,8 @@ python compute_evol_indices.py ^
     --num_samples_compute_evol_indices "%num_samples_compute_evol_indices%" ^
     --batch_size "%batch_size%"
 ```
+第三步：
+```
+
+
+```
