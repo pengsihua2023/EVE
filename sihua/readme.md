@@ -70,7 +70,7 @@ export GMM_parameter_filename_suffix=default
 export protein_GMM_weight=0.3
 export plot_location=C:\Users\sp96859\test\EVE\results
 export labels_file_location=C:\Users\sp96859\test\EVE\data\labels\PTEN_ClinVar_labels.csv
-export default_uncertainty_threshold_file_location=C:\Users\sp96859\test\EVE\utils\default_uncertainty_threshold.json'
+export default_uncertainty_threshold_file_location=C:\Users\sp96859\test\EVE\utils\default_uncertainty_threshold.json
 
 python train_GMM_and_compute_EVE_scores.py ^
 --input_evol_indices_location "%input_evol_indices_location%" ^
