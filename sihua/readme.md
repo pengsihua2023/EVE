@@ -37,8 +37,8 @@ set training_logs_location=C:\Users\sp96859\test\EVE\logs
 set protein_index=0
 
 set computation_mode=all_singles
-set all_singles_mutations_folder='./data/mutations'
-set output_evol_indices_location='./results/evol_indices'
+set all_singles_mutations_folder=C:\Users\sp96859\test\EVE\data\mutations
+set output_evol_indices_location=C:\Users\sp96859\test\EVE\results\evol_indices
 set num_samples_compute_evol_indices=20000
 set batch_size=2048
 
