@@ -10,12 +10,12 @@ from utils import data_utils
 if __name__=='__main__':
 
     parser = argparse.ArgumentParser(description='Evol indices')
-    parser.add_argument('--MSA_data_folder', type=str, help='Folder where MSAs are stored')
+    parser.add_argument('--MSA_data_folder', type=str, help='Folder where MSAs are stored') #有
     parser.add_argument('--MSA_list', type=str, help='List of proteins and corresponding MSA file name')
     parser.add_argument('--protein_index', type=int, help='Row index of protein in input mapping file')
     parser.add_argument('--MSA_weights_location', type=str, help='Location where weights for each sequence in the MSA will be stored')
     parser.add_argument('--theta_reweighting', type=float, help='Parameters for MSA sequence re-weighting')
-    parser.add_argument('--VAE_checkpoint_location', type=str, help='Location where VAE model checkpoints will be stored')
+    parser.add_argument('--VAE_checkpoint_location', type=str, help='Location where VAE model checkpoints will be stored') # 没有
     parser.add_argument('--model_name_suffix', default='Jan1', type=str, help='model checkpoint name is the protein name followed by this suffix')
     parser.add_argument('--model_parameters_location', type=str, help='Location of VAE model parameters')
     parser.add_argument('--computation_mode', type=str, help='Computes evol indices for all single AA mutations or for a passed in list of mutations (singles or multiples) [all_singles,input_mutations_list]')
