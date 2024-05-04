@@ -1,7 +1,7 @@
 export MSA_data_folder='./data/MSA' # 比对蛋白质家族文件
 export MSA_list='./data/mappings/example_mapping.csv' # 参数theta参数设置
-export MSA_weights_location='./data/weights' # 计算前空置的
-export VAE_checkpoint_location='./results/VAE_parameters' # 计算前空置的 
+export MSA_weights_location='./data/weights' # 计算前空置的，第一步计算得出
+export VAE_checkpoint_location='./results/VAE_parameters' # 计算前空置的 ，第一步计算得出
 export model_name_suffix='Jan1_PTEN_example'
 export model_parameters_location='./EVE/default_model_params.json' # 模型配置文件
 export training_logs_location='./logs/' # 计算前空置的 
