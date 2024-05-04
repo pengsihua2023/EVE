@@ -1,5 +1,5 @@
-export MSA_data_folder='./data/MSA'
-export MSA_list='./data/mappings/example_mapping.csv'
+export MSA_data_folder='./data/MSA' # 比对蛋白质家族文件
+export MSA_list='./data/mappings/example_mapping.csv' # 参数theta参数设置
 export MSA_weights_location='./data/weights'
 export VAE_checkpoint_location='./results/VAE_parameters'
 export model_name_suffix='Jan1_PTEN_example'
