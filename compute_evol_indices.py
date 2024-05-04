@@ -11,20 +11,20 @@ if __name__=='__main__':
 
     parser = argparse.ArgumentParser(description='Evol indices')
     parser.add_argument('--MSA_data_folder', type=str, help='Folder where MSAs are stored') #有
-    parser.add_argument('--MSA_list', type=str, help='List of proteins and corresponding MSA file name')
-    parser.add_argument('--protein_index', type=int, help='Row index of protein in input mapping file')
-    parser.add_argument('--MSA_weights_location', type=str, help='Location where weights for each sequence in the MSA will be stored')
-    parser.add_argument('--theta_reweighting', type=float, help='Parameters for MSA sequence re-weighting')
-    parser.add_argument('--VAE_checkpoint_location', type=str, help='Location where VAE model checkpoints will be stored') # 没有
-    parser.add_argument('--model_name_suffix', default='Jan1', type=str, help='model checkpoint name is the protein name followed by this suffix')
-    parser.add_argument('--model_parameters_location', type=str, help='Location of VAE model parameters')
+    parser.add_argument('--MSA_list', type=str, help='List of proteins and corresponding MSA file name') #有
+    parser.add_argument('--protein_index', type=int, help='Row index of protein in input mapping file') #有
+    parser.add_argument('--MSA_weights_location', type=str, help='Location where weights for each sequence in the MSA will be stored') #有
+    parser.add_argument('--theta_reweighting', type=float, help='Parameters for MSA sequence re-weighting') #### 没有
+    parser.add_argument('--VAE_checkpoint_location', type=str, help='Location where VAE model checkpoints will be stored') ### 没有
+    parser.add_argument('--model_name_suffix', default='Jan1', type=str, help='model checkpoint name is the protein name followed by this suffix') # 有
+    parser.add_argument('--model_parameters_location', type=str, help='Location of VAE model parameters') # 有
     parser.add_argument('--computation_mode', type=str, help='Computes evol indices for all single AA mutations or for a passed in list of mutations (singles or multiples) [all_singles,input_mutations_list]')
-    parser.add_argument('--all_singles_mutations_folder', type=str, help='Location for the list of generated single AA mutations')
-    parser.add_argument('--mutations_location', type=str, help='Location of all mutations to compute the evol indices for')
-    parser.add_argument('--output_evol_indices_location', type=str, help='Output location of computed evol indices')
-    parser.add_argument('--output_evol_indices_filename_suffix', default='', type=str, help='(Optional) Suffix to be added to output filename')
-    parser.add_argument('--num_samples_compute_evol_indices', type=int, help='Num of samples to approximate delta elbo when computing evol indices')
-    parser.add_argument('--batch_size', default=256, type=int, help='Batch size when computing evol indices')
+    parser.add_argument('--all_singles_mutations_folder', type=str, help='Location for the list of generated single AA mutations') # 有
+    parser.add_argument('--mutations_location', type=str, help='Location of all mutations to compute the evol indices for') 
+    parser.add_argument('--output_evol_indices_location', type=str, help='Output location of computed evol indices') # 有
+    parser.add_argument('--output_evol_indices_filename_suffix', default='', type=str, help='(Optional) Suffix to be added to output filename') ### 没有
+    parser.add_argument('--num_samples_compute_evol_indices', type=int, help='Num of samples to approximate delta elbo when computing evol indices') # 有
+    parser.add_argument('--batch_size', default=256, type=int, help='Batch size when computing evol indices') # 有
     args = parser.parse_args()
 
     mapping_file = pd.read_csv(args.MSA_list)
