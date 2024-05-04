@@ -3,8 +3,8 @@ export MSA_list='./data/mappings/example_mapping.csv' # 参数theta参数设置
 export MSA_weights_location='./data/weights' # 计算前空置的
 export VAE_checkpoint_location='./results/VAE_parameters' # 计算前空置的 
 export model_name_suffix='Jan1_PTEN_example'
-export model_parameters_location='./EVE/default_model_params.json'
-export training_logs_location='./logs/'
+export model_parameters_location='./EVE/default_model_params.json' # 模型配置文件
+export training_logs_location='./logs/'#
 export protein_index=0
 
 export computation_mode='all_singles'
