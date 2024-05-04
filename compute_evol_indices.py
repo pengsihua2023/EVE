@@ -20,7 +20,7 @@ if __name__=='__main__':
     parser.add_argument('--model_parameters_location', type=str, help='Location of VAE model parameters') # 有
     parser.add_argument('--computation_mode', type=str, help='Computes evol indices for all single AA mutations or for a passed in list of mutations (singles or multiples) [all_singles,input_mutations_list]')
     parser.add_argument('--all_singles_mutations_folder', type=str, help='Location for the list of generated single AA mutations') # 有
-    parser.add_argument('--mutations_location', type=str, help='Location of all mutations to compute the evol indices for') 
+    parser.add_argument('--mutations_location', type=str, help='Location of all mutations to compute the evol indices for') ### 没有
     parser.add_argument('--output_evol_indices_location', type=str, help='Output location of computed evol indices') # 有
     parser.add_argument('--output_evol_indices_filename_suffix', default='', type=str, help='(Optional) Suffix to be added to output filename') ### 没有
     parser.add_argument('--num_samples_compute_evol_indices', type=int, help='Num of samples to approximate delta elbo when computing evol indices') # 有
