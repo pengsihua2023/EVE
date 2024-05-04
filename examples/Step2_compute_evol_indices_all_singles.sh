@@ -8,7 +8,7 @@ export training_logs_location='./logs/' #### 计算前空置的 ，第一步计�
 export protein_index=0
 
 export computation_mode='all_singles'
-export all_singles_mutations_folder='./data/mutations' #### 计算前空置的，第一步计算时有了
+export all_singles_mutations_folder='./data/mutations' #### 计算前空置的，第一步计算完有了结果
 export output_evol_indices_location='./results/evol_indices' # 计算前空置的，第二步计算完就有结果了
 export num_samples_compute_evol_indices=20000
 export batch_size=2048
