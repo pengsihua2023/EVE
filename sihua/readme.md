@@ -5,7 +5,7 @@
 1. example_mapping.csv设定MSA目录中的蛋白质序列和theta值   
 2. 模型jason文件： MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA  
 3. model_parameters_location=C:\Users\sp96859\test\EVE\EVE\default_model_params.json
-4. protein_index=0  
+4. 其实只有一行（第零行）：protein_index=0  
 
 ### 结果
 1. 训练得到模型：VAE_checkpoint_location=C:\Users\sp96859\test\EVE\results\VAE_parameters  
