@@ -1,6 +1,14 @@
 # 我的修改
 ## 在windows下运行代码
-第一步：把下列代码保存为bat文件：step1.bat直接在conda环境下运行step1.bat
+第一步：把下列代码保存为bat文件：step1.bat直接在conda环境下运行step1.bat  
+### 数据
+1. example_mapping.csv设定MSA目录中的蛋白质序列和 
+2. 模型jason文件： MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA
+3. model_parameters_location=C:\Users\sp96859\test\EVE\EVE\default_model_params.json
+
+### 结果
+1. 模型：VAE_checkpoint_location=C:\Users\sp96859\test\EVE\results\VAE_parameters
+2. 
 ```
 @echo off
 set MSA_data_folder=C:\Users\sp96859\test\EVE\data\MSA
